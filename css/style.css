@@ -3,6 +3,7 @@
 
 body {
     background-color: #ccc;
+    font-family:'Courier New', Courier, monospace;
     width:100%;
     height:100vh;
     position:relative;
@@ -11,6 +12,126 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.login {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#login-form {
+    text-align: center;
+}
+#greeting {
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+input,button {
+    caret-color: transparent;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    border-radius: 15px;
+    font-size: 20px;
+}
+input{
+    margin-bottom: 15px;
+}
+input:focus-visible,
+input:focus,
+button {
+    outline: none;
+    border: none;
+}
+input::placeholder,
+input:valid {
+    color: black;
+    text-align:center;
+}
+#login-form button {
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 20px;
+}
+
+.todo {
+    width: auto;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    text-align:center;
+}
+#todo-form input{
+    width: 300px;
+    margin-bottom: 40px;
+}
+#todo-list {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    width: inherit;
+    height: auto;
+    box-sizing: border-box;
+}
+#todo-list li {
+    padding: 10px 10px 10px 15px;
+    margin: 10px;
+    width: 500px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(255,255,255,0.2);
+    color: rgba(0,0,0,1);
+    font-weight:600;
+    border-radius: 15px;
+}
+
+#quote {
+    font-size: 15px;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: tomato;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 red;
+}
+.clock {
+    position:absolute;
+    left: 15px;
+    top: 15px;
+    display:flex;
+    align-items: flex-end;
+    font-size: 50px;
+    font-weight: 800;
+}
+#weather {
+    position: absolute;
+    right:15px;
+    top:15px;
+    display:flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 600;
+}
+#weather span:first-child{
+    margin-bottom: 5px;
+    font-size: 25px;
 }
 .hidden {
     display:none;
